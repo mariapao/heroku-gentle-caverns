@@ -28,6 +28,7 @@ gem 'jbuilder', '~> 2.5'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 gem 'devise'
+gem 'bootstrap-sass'
 
 group :production do
   # Use postgres as the database for Active Record
@@ -39,6 +40,7 @@ group :development, :test do
   gem 'byebug', platform: :mri
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
+  gem 'rails_layout'
 end
 
 group :development do
