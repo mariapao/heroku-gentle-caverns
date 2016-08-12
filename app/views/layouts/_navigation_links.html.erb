@@ -6,3 +6,10 @@
 <% end %>
 <li><%= link_to 'Teams', teams_path %></li>
 
+<% if @team %>
+	<li><%= link_to @team.name, team_path(@team)%></li>
+<% end %>
+
+<% if @channel %>
+	<li><%= link_to @channel.name, team_channel_path(@team, @channel)%></li>
+<% end %>
